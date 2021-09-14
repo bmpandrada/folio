@@ -651,6 +651,7 @@ footer span a:hover {
     }
     .home {
         background-size: 90vmax;
+        background: url(vibpic/Untitled-5-Recovered.png) no-repeat top center;
     }
     .about,
     .service,
