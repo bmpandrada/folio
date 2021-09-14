@@ -657,6 +657,8 @@ footer span a:hover {
         background-size: cover;
         background-attachment: fixed;
         font-family: montserrat, sans-serif;
+        height: 100%;
+        overflow: hidden;
     }
     .service .service-content .card {
         width: 100%;
