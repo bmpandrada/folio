@@ -645,7 +645,7 @@ footer span a:hover {
         font-size: .645rem;
     }
     .home {
-        background-image: 100%;
+        background: 50%;
     }
     .service .service-content .card {
         width: 100%;
