@@ -654,6 +654,7 @@ footer span a:hover {
     }
     .home {
         background-size: 90vmax;
+        background-attachment: scroll;
     }
     .home .home-content a {
         font-size: .645rem;
