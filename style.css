@@ -652,11 +652,14 @@ footer span a:hover {
     .max-width {
         padding: 0 2.8;
     }
-    .home,
+    .home {
+        background-size: 100vmax;
+    }
     .about,
     .service,
-    .skills {
-        background-size: 100%vmax;
+    .skills,
+    .contact {
+        background-size: 100vmax 100vmax;
     }
     .home .home-content a {
         font-size: .645rem;
