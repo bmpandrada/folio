@@ -4,10 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
+   
 }
 
 .max-width {
@@ -653,7 +650,7 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-        background-size: 100vmax;
+        background-size: 95vmax;
     }
     .about,
     .service,
