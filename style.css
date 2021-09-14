@@ -658,7 +658,7 @@ footer span a:hover {
     .service,
     .skills,
     .contact {
-        background-image:100vmax 100%;
+        background-image:100vmax;
     }
     .home .home-content a {
         font-size: .645rem;
