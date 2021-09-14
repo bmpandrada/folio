@@ -651,13 +651,14 @@ footer span a:hover {
     }
     .home {
         background-size: 90vmax;
-        background: url(vibpic/Untitled-5-Recovered.png) no-repeat top center;
+        Background-attachment: scroll;
+        background: url(vibpic/Untitled-5-Recovered.png) no-repeat center;
     }
     .about,
     .service,
     .skills,
     .contact {
-        background-image: 100vmax 100vmax;
+        background-image:100%;
     }
     .home .home-content a {
         font-size: .645rem;
