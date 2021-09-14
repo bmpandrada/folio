@@ -652,7 +652,11 @@ footer span a:hover {
         font-size: .645rem;
     }
     .home {
-        background: 50%;
+        display: flex;
+        background: url(vibpic/Artboard\ 1.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: montserrat, sans-serif;
     }
     .service .service-content .card {
         width: 100%;
