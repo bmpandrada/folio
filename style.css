@@ -650,15 +650,15 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-        background-size: 90vmax;
+        background-size: 70vmax;
         Background-attachment: scroll;
-        background: url(vibpic/Untitled-5-Recovered.png) no-repeat center;
+      
     }
     .about,
     .service,
     .skills,
     .contact {
-        background-image:100%;
+        background-image:100vmax 100%;
     }
     .home .home-content a {
         font-size: .645rem;
