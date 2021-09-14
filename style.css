@@ -655,6 +655,7 @@ footer span a:hover {
     .home {
         background-size: 90vmax;
         background-attachment: scroll;
+         background: url(vibpic/Untitled-5-Recovered.png) no-repeat top center;
     }
     .home .home-content a {
         font-size: .645rem;
