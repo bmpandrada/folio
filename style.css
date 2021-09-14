@@ -544,6 +544,13 @@ footer span a:hover {
 
 
 /* responsive Media Query */
+@media screen and (device-width: 320px) and (device-height: 640px) and (orientation: portrait) {
+    body {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 @media (max-width: 1920px) {
     .home .max-width {
