@@ -672,7 +672,7 @@ footer span a:hover {
     font-size: 1rem;
     background: url(vibpic/gg.jpg) no-repeat bottom;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: rgb(247, 247, 247);
     min-height: 31.25rem;
     max-height: 45rem;
