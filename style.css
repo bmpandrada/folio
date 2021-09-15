@@ -650,8 +650,8 @@ footer span a:hover {
     .max-width {
         padding: 0 2.8;
     }
-    .home{
-    background-size: 95vmax;
+    .home {
+    background-size: 90vmax;
     background-attachment: scroll;
 
     }
