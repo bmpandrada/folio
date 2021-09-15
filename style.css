@@ -651,13 +651,9 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home{
-        display: flex;
-    background: url(vibpic/Untitled-5-Recovered.png) no-repeat center;
-    height: 100vh;
-    max-height: 45rem;
-    background-size: cover;
+    background-size: 95vmax;
     background-attachment: fixed;
-}
+
     }
     .service .service-content .card {
         Width: ;
