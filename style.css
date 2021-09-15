@@ -668,13 +668,17 @@ footer span a:hover {
         height: 250px;
     }
     . skills {
-    font-family: montserrat, sans-serif;
-    font-size: 1rem;
-    background: url(vibpic/gg.jpg) no-repeat bottom;
+    background: url(vibpic/gg.jpg) no-repeat center;
     background-size: cover;
     background-attachment: scroll;
     color: rgb(247, 247, 247);
     background-repeat: no-repeat;
+}
+     .contact {
+         background: url(vibpic/bacl.jpg) no-repeat left;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
 }
 }
 
