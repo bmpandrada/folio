@@ -655,8 +655,8 @@ footer span a:hover {
          Background-attachment: scroll;
     }
     .service .service-content .card {
-         width: calc(60% - 1em);
-         margin-bottom: 1.8;
+         width: 100%;
+         max-width: 25em;
     }
     .about .about-content .left img {
         width: 250px;
