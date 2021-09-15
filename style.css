@@ -664,7 +664,7 @@ footer span a:hover {
         font-size: .645rem;
     }
     .service .service-content .card {
-        background-size:10vmax 100%;
+        background-size: cover;
     }
     .about .about-content .left img {
         width: 250px;
