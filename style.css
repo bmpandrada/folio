@@ -674,8 +674,7 @@ footer span a:hover {
     background-size: cover;
     background-attachment: scroll;
     color: rgb(247, 247, 247);
-    min-height: 31.25rem;
-    max-height: 45rem;
+    background-repeat: no-repeat;
 }
 }
 
