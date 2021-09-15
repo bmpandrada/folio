@@ -651,8 +651,9 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-     background-attachment: scroll;
-    padding: 16em 0px;
+    background-size: contain;
+    background-repeat: repeat;
+}
     }
     .service .service-content .card {
         Width: ;
