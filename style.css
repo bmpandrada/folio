@@ -1,4 +1,4 @@
-Ko@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -658,13 +658,13 @@ footer span a:hover {
     .service,
     .skills,
     .contact {
-        background;
+        background-image:cover;
     }
     .home .home-content a {
         font-size: .645rem;
     }
     .service .service-content .card {
-        Width: 
+        Width: ;
     }
     .about .about-content .left img {
         width: 250px;
