@@ -651,9 +651,8 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-    background-size: 90vmax;
-    background-attachment: scroll;
-
+         background-size: 90vmax;
+         Background-attachment: scroll;
     }
     .service .service-content .card {
          width: calc(50% - 1em);
