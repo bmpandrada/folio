@@ -650,9 +650,13 @@ footer span a:hover {
     .max-width {
         padding: 0 2.8;
     }
-    .home, .skills, .contact {
-    background-size: contain;
-    background-repeat: no-repeat;
+    .home{
+        display: flex;
+    background: url(vibpic/Untitled-5-Recovered.png) no-repeat center;
+    height: 100vh;
+    max-height: 45rem;
+    background-size: cover;
+    background-attachment: fixed;
 }
     }
     .service .service-content .card {
