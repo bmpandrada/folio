@@ -653,7 +653,7 @@ footer span a:hover {
     .home {
          background: url(vibpic/art.jpg) no-repeat center;
          background-size: cover;
-         Background-attachment: fixed;
+        
     }
     .service {
          background: url(vibpic/banner-3.jpg) no-repeat center;
