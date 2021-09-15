@@ -649,18 +649,14 @@ footer span a:hover {
 @media (max-width: 690px) {
     .max-width {
         padding: 0 2.8;
+        max-width: 680px;
     }
     .home {
         background-size: 100vmax;
         Background-attachment: scroll;
       
     }
-    .about,
-    .service,
-    .skills,
-    .contact {
-        background-size: cover;
-    }
+ 
     .home .home-content a {
         font-size: .645rem;
     }
