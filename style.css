@@ -656,9 +656,9 @@ footer span a:hover {
     }
     .service {
          background: url(vibpic/banner-3.jpg) no-repeat center;
-         background-size: cover;
+         background-size: 100vmax;
          background-repeat: no-repeat;
-         background-attachment: fixed;
+         background-attachment: scroll;
 }
     .service .service-content .card {
          width: 100%;
