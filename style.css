@@ -659,7 +659,6 @@ footer span a:hover {
          background-size: cover;
          background-repeat: no-repeat;
          background-attachment: scroll;
-         box-sizing: content-box
 }
     .service .service-content .card {
          width: 100%;
