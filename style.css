@@ -659,7 +659,7 @@ footer span a:hover {
     .service,
     .skills,
     .contact {
-        background-size: 100vmax;
+        background-size: auto;
     }
     .home .home-content a {
         font-size: .645rem;
