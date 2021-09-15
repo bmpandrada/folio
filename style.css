@@ -675,7 +675,7 @@ footer span a:hover {
     background-repeat: no-repeat;
 }
      .contact {
-         background: url(vibpic/bacl.jpg) no-repeat left;
+         background: url(vibpic/bacl.jpg) no-repeat center;
          background-size: cover;
          background-repeat: no-repeat;
          background-attachment: scroll;
