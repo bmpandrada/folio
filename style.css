@@ -649,8 +649,9 @@ footer span a:hover {
 @media (max-width: 690px) {
     .max-width {
         padding: 0 2.8;
-        max-width: 510px;
     }
+    body { 
+      width: 100%; max-width: 100%; height: auto;
     .home {
         background-size: 100vmax;
         Background-attachment: scroll;
