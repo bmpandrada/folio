@@ -659,6 +659,7 @@ footer span a:hover {
 ) no-repeat top;
          background-size: cover;
          background-repeat: no-repeat;
+         background-attachment: fixed;
 }
     .service .service-content .card {
          width: 100%;
