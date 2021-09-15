@@ -651,12 +651,11 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-         background-size: 100vmax;
+         background-size: 97vmax;
          Background-attachment: scroll;
     }
     .service .service-content .card {
          width: 100%;
-         max-width: 25em;
     }
     .about .about-content .left img {
         width: 250px;
