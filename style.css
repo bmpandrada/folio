@@ -650,16 +650,9 @@ footer span a:hover {
     .max-width {
         padding: 0 2.8;
     }
-    * { 
-      width: 100%; max-width: 100%; height: auto;
-    .home {
-        background-size: 100vmax;
-        Background-attachment: scroll;
-      
-    }
- 
-    .home .home-content a {
-        font-size: .645rem;
+    .home{
+     background-attachment: scroll;
+    padding: 254px 0px;
     }
     .service .service-content .card {
         Width: ;
