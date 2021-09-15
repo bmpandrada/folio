@@ -669,7 +669,7 @@ footer span a:hover {
         height: 250px;
     }
     . skills {
-    background: url(vibpic/banner-4.jpg) no-repeat center;
+    background: url(vibpic/banner-4.jpg) no-repeat left;
     background-size: cover;
     background-attachment: scroll;
     color: rgb(247, 247, 247);
