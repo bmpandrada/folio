@@ -658,13 +658,13 @@ footer span a:hover {
     .service,
     .skills,
     .contact {
-        background-size: 100vmax 100%;
+        background-size: 100%;
     }
     .home .home-content a {
         font-size: .645rem;
     }
     .service .service-content .card {
-        background-size: cover;
+        Width: 100%;
     }
     .about .about-content .left img {
         width: 250px;
