@@ -160,7 +160,7 @@ section {
     background: url(vibpic/) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(51, 6, 250, 0.61), rgba(50, 4, 65, 0.486)), url(vibpic/Untitled-3-1@1x_1.jpg);
+       background-image: linear-gradient(60deg, #160224, #8c00e9, #54177c);
     color: #ffffff;
 }
 
@@ -664,11 +664,6 @@ footer span a:hover {
     .service .service-content .card {
          width: 100%;
     }
-    .about {
-    background-attachment: scroll;
-    background-size: cover;
-    background-image: url(vibpic/art123.png);
-}
     .about .about-content .left img {
         width: 250px;
         height: 250px;
