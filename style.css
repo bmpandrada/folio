@@ -829,8 +829,7 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-        background-size: auto 100vh;
-        background: url('vibpic/a2.jpg') center top no-repeat scroll;
+         background-attachment: scroll;
         
     }
    
