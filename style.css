@@ -829,8 +829,9 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-         background-attachment: scroll;
-        
+        background-attachment:inherit;    
+        background-size:cover;
+        -webkit-background-size:cover;
     }
    
     .home .home-content a {
