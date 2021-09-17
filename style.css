@@ -828,7 +828,12 @@ footer span a:hover {
     .max-width {
         padding: 0 2.8;
     }
-    .home, 
+    .home{
+     background: url(vibpic/a2.jpg) no-repeat center;
+     }
+   
+    .home,
+    .about, 
     .service,
     .skills,
     .contact {
