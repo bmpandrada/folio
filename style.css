@@ -829,14 +829,11 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home {
-        background-size: 100vmax;
+        background-size: 95vmax;
+        background-size: cover;
+        background-attachment: scroll;
     }
-    .about,
-    .service,
-    .skills,
-    .contact {
-        background-size: 100vmax 100vmax;
-    }
+   
     .home .home-content a {
         font-size: .5em;
     }
