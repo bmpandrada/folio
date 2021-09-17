@@ -830,8 +830,8 @@ footer span a:hover {
     }
     .home {
         background-size: 95vmax;
-        background-size: cover;
-        background-attachment: scroll;
+        background: url('vibpic/a2.jpg') center top no-repeat scroll;
+        
     }
    
     .home .home-content a {
