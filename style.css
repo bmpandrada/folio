@@ -828,7 +828,10 @@ footer span a:hover {
     .max-width {
         padding: 0 2.8;
     }
-    .home {
+    .home, 
+    .service,
+    .skills,
+    .contact {
         background-attachment:inherit;    
         background-size:cover;
         -webkit-background-size:cover;
