@@ -1,10 +1,10 @@
 $(document).ready(function() {
     $(window).scroll(function() {
         if (this.scrollY > 20) {
-            $('.navbar').addClass("sticky");
+            $('.navbar,.menu-btn i').addClass("sticky");
 
         } else {
-            $('.navbar').removeClass('sticky');
+            $('.navbar,.menu-btn i').removeClass('sticky');
 
         }
     });
@@ -15,6 +15,7 @@ $(document).ready(function() {
     //THIS IS FOR MENU TOGGLE
     //MENU TAB WILL APPEAR AFTER MINIMIZING
     $('.menu-btn').click(function() {
+        $(this).toggleClass('active');
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn img').toggleClass("active");
 
