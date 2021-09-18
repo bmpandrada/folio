@@ -837,9 +837,10 @@ footer span a:hover {
     .service,
     .skills,
     .contact {
-        background-attachment: inherit;    
-        background-size:cover;
-        -webkit-background-size:cover;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
     }
    
     .home .home-content a {
