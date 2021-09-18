@@ -830,13 +830,9 @@ footer span a:hover {
     }
     .home{
      background: url(vibpic/a2.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
      }
    
-    
+    .home,
     .about, 
     .service,
     .skills,
