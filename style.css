@@ -829,18 +829,21 @@ footer span a:hover {
         padding: 0 2.8;
     }
     .home{
-     background: url(vibpic/a2.jpg) no-repeat center;
+     background: url(vibpic/a2.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
      }
    
-    .home,
+    
     .about, 
     .service,
     .skills,
     .contact {
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
+        background-attachment: inherit;    
+        background-size:cover;
+        -webkit-background-size:cover;
     }
    
     .home .home-content a {
