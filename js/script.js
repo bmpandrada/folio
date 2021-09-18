@@ -1,5 +1,12 @@
 $(document).ready(function() {
+    $('a').click(function(e) {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 1000);
+    });
     $(window).scroll(function() {
+
+
         if (this.scrollY > 20) {
             $('.navbar,.menu-btn i').addClass("sticky");
 
@@ -7,6 +14,7 @@ $(document).ready(function() {
             $('.navbar,.menu-btn i').removeClass('sticky');
 
         }
+
 
     });
 
