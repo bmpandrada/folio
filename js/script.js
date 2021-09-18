@@ -7,6 +7,8 @@ $(document).ready(function() {
             $('.navbar,.menu-btn i').removeClass('sticky');
 
         }
+        var image = document.getElementsByClassName('img');
+        new simpleParallax(image);
     });
 
     $('.navbar .menu li a').click(function() {
