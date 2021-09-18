@@ -305,6 +305,7 @@
 /*.home .home-content .text-1 {
     font-size: .1em;
 }
+
 .home .home-content .text-2 {
     /*font-size: 1.4rem;*/
 
@@ -312,6 +313,7 @@
 /*  font-size: 3.4rem;
     font-weight: 300;
 }
+
 .home .home-content .text-3 {
     font-weight: 600;
     font-size: 2rem;
@@ -812,7 +814,7 @@ footer span a:hover {
         flex: 100%;
     }
     .service .service-content .card {
-        width: calc(100% - 1em);
+        width: calc(50% - 1em);
         margin-bottom: 1.8;
     }
     .skills .skills-content .column,
@@ -822,28 +824,28 @@ footer span a:hover {
     }
 }
 
-
-/*@media (max-width: 690px)*/
-
-@media only screen and (min-device-width: 690px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 690px) {
     .max-width {
         padding: 0 2.8;
     }
-    .home {
-        background: url(vibpic/a2.jpg) no-repeat center center fixed;
-    }
+    .home{
+     background: url(vibpic/a2.jpg) no-repeat center center fixed;
+     }
+
     .service {
-        background: linear-gradient(to bottom, rgba(2, 42, 85, 0.459), rgba(2, 5, 43, 0.486)), url(vibpic/com.jpg) no-repeat center center fixed;
+     background: linear-gradient(to bottom, rgba(2, 42, 85, 0.459), rgba(2, 5, 43, 0.486)), url(vibpic/com.jpg) no-repeat center center fixed;
     }
+
     .home,
-    .about,
+    .about, 
     .service,
     .skills,
     .contact {
-        
-        background-size: cover;
-        -webkit-background-size: cover;
+        background-attachment: inherit;    
+        background-size:cover;
+        -webkit-background-size:cover;
     }
+   
     .home .home-content a {
         font-size: .5em;
     }
