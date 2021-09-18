@@ -840,6 +840,7 @@ footer span a:hover {
     .service,
     .skills,
     .contact {
+        background-attachment: fixed;
         background-size: cover;
         -webkit-background-size: cover;
     }
@@ -865,3 +866,4 @@ footer span a:hover {
     }
 }
 
+@media (max-width:375px) {}
