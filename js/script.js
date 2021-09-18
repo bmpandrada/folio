@@ -7,7 +7,7 @@ $(document).ready(function() {
             $('.navbar,.menu-btn i').removeClass('sticky');
 
         }
-      
+
     });
 
     $('.navbar .menu li a').click(function() {
@@ -17,6 +17,7 @@ $(document).ready(function() {
     //MENU TAB WILL APPEAR AFTER MINIMIZING
     $('.menu-btn').click(function() {
         $(this).toggleClass('active');
+
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn img').toggleClass("active");
 
@@ -24,6 +25,10 @@ $(document).ready(function() {
     //THIS IS FOR AFTER CLICK MENU//
     $('.navbar .menu').on('click', event => {
         $(event.currentTarget).toggleClass("active");
+        $(this).find('.menu-btn').toggleClass('active');
+
     });
+
+
 
 });
