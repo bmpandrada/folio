@@ -1,26 +1,23 @@
 $(document).ready(function() {
-    $('a').click(function(e) {
+
+
+    //THIS IS FOR link smooth behavior
+    $('a').click(function() {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
     });
     $(window).scroll(function() {
 
-
+        //navigation switch sticky
         if (this.scrollY > 20) {
             $('.navbar,.menu-btn i').addClass("sticky");
 
         } else {
             $('.navbar,.menu-btn i').removeClass('sticky');
-
         }
-
-
     });
 
-    $('.navbar .menu li a').click(function() {
-        $('html').css("scrollBehavior", "smooth");
-    });
     //THIS IS FOR MENU TOGGLE
     //MENU TAB WILL APPEAR AFTER MINIMIZING
     $('.menu-btn').click(function() {
