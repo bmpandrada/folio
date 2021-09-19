@@ -1,22 +1,31 @@
 $(document).ready(function() {
 
-
     //THIS IS FOR link smooth behavior
+
     $('a').click(function() {
+
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
     });
+
+
+    //navigation switch sticky
     $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        $("#about img").css({
+            width: (40 + scroll / 20) + "%"
 
-        //navigation switch sticky
+        });
+
+
         if (this.scrollY > 20) {
-            $('.navbar,.menu-btn i').addClass("sticky");
-
+            $('.navbar').addClass("sticky");
         } else {
-            $('.navbar,.menu-btn i').removeClass('sticky');
+            $('.navbar').removeClass('sticky');
         }
     });
+
 
     //THIS IS FOR MENU TOGGLE
     //MENU TAB WILL APPEAR AFTER MINIMIZING
@@ -25,8 +34,9 @@ $(document).ready(function() {
 
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn img').toggleClass("active");
-
     });
+
+
     //THIS IS FOR AFTER CLICK MENU//
     $('.navbar .menu').on('click', event => {
         $(event.currentTarget).toggleClass("active");
