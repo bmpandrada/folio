@@ -14,7 +14,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         $("#about img").css({
-            width: (80 + scroll / 11)
+            width: (50 + scroll / 2)
 
         });
 
