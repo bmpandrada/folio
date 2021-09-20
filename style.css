@@ -812,7 +812,7 @@ footer span a:hover {
     }
     .about.about-content .right {
         flex: 100%;
-        font-family: montserrat, sans-serif;
+       
     }
     .service .service-content .card {
         width: calc(50% - 1em);
@@ -822,6 +822,7 @@ footer span a:hover {
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 1.8;
+        font-family: montserrat, sans-serif;
     }
 }
 
