@@ -538,7 +538,7 @@ section {
 }
 
 .skills .skills-content .right span {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1rem;
     padding: .1rem;
 }
@@ -546,7 +546,7 @@ section {
 .skills .skills-content .right .line {
     width: 100%;
     height: .8em;
-    background: yellow;
+    background: #9534eb;
     position: relative;
 }
 
@@ -556,7 +556,7 @@ section {
     height: 100%;
     left: 0;
     right: 0;
-    background: violet;
+    background: #5c10adt;
 }
 
 .skills-content .right .html::before {
