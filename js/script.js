@@ -1,26 +1,6 @@
 $(document).ready(function() {
 
     
-    var supports = (function() {
-        var d = document.documentElement,
-            c = "ontouchstart" in window || navigator.msMaxTouchPoints;
-        if (c) {
-            d.className += " #service";
-            return {
-                touch: true
-            }
-        } else {
-            d.className += " #service";
-            return {
-                touch: false
-            }
-        }
-    })();
-    
-    
-    
-    
-    
     //THIS IS FOR link smooth behavior
 
     $('a').click(function() {
@@ -38,7 +18,6 @@ $(document).ready(function() {
             width: (150 + scroll / 17)
 
         });
-
 
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
