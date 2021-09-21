@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+    
+    var supports = (function() {
+        var d = document.documentElement,
+            c = "ontouchstart" in window || navigator.msMaxTouchPoints;
+        if (c) {
+            d.className += " #service";
+            return {
+                touch: true
+            }
+        } else {
+            d.className += " #service";
+            return {
+                touch: false
+            }
+        }
+    })();
+    
+    
+    
+    
+    
     //THIS IS FOR link smooth behavior
 
     $('a').click(function() {
