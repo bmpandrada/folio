@@ -374,17 +374,19 @@ section {
 
 .about .about-content .left img.sticky {
     border-radius: 3em;
-    transition: all 0.5s linear;
+    margin-left: 0;
     transition-delay: 0.3s;
     background-image: linear-gradient(60deg, #b196c4, #8c00e9, #54177c);
 }
 
 .about .about-content .left img {
     height: 24rem;
+    margin-left: -50em;
     transition-delay: 0.3s;
     width: 24rem;
     object-fit: cover;
     border-radius: 10em;
+    transition: all 0.5s linear;
 }
 
 .about .about-content .right.sticky {
