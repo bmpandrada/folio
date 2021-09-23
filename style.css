@@ -377,6 +377,7 @@ section {
     margin-left: 0;
     transition-delay: 0.3s;
     opacity: 1;
+    width: 24rem;
     background-image: linear-gradient(60deg, #b196c4, #8c00e9, #54177c);
 }
 
@@ -385,9 +386,8 @@ section {
     margin-left: -35em;
     opacity: 0;
     transition-delay: 0.3s;
-    width: 24rem;
+    width: 4rem;
     object-fit: cover;
-    Width: 10%;
     border-radius: 10em;
     transition: all 0.5s linear;
 }
