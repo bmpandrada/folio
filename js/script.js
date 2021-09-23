@@ -13,12 +13,6 @@ $(document).ready(function() {
     //navigation switch sticky
     $(window).scroll(function() {
 
-
-
-
-
-
-
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
@@ -31,6 +25,12 @@ $(document).ready(function() {
         } else {
             $('.about .about-content .left img, .about .about-content .right').removeClass('sticky');
         }
+        if (this.scrollY > 800) {
+            $('.service .service-content .card').addClass("sticky");
+        } else {
+            $('.service .service-content .card').removeClass('sticky');
+        }
+
     });
 
     //THIS IS FOR MENU TOGGLE
