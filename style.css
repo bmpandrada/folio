@@ -387,6 +387,7 @@ section {
     transition-delay: 0.3s;
     width: 24rem;
     object-fit: cover;
+    Width: 10%;
     border-radius: 10em;
     transition: all 0.5s linear;
 }
