@@ -461,6 +461,7 @@ section {
 
 .service .service-content .card:hover {
     background: rgb(138, 7, 224);
+    transform: scale(1.019);
 }
 
 .service .service-content .card .box {
