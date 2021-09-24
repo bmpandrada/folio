@@ -430,6 +430,18 @@ section {
     font-size: 3rem;
     padding: 2.5rem;
     color: wheat;
+    opacity: 0;
+}
+
+.service .title.sticky {
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2.5rem;
+    color: wheat;
+    opacity: 1;
+    transition: all 0.4s ease;
+    transition-delay: 0.4s;
 }
 
 .service .service-content {
@@ -443,20 +455,19 @@ section {
     width: calc(33% - 20px);
     background: #ffffff00;
     text-align: center;
-    border-radius: 100em;
     padding: 20px 25px;
     opacity: 0;
-    transform: scale(-1);
+    transform: scaleY(0);
 }
 
 .service .service-content .card.sticky {
     background: #ffffffc2;
     margin: 1em 0 auto;
     transition: all 0.9s ease;
-    transition-delay: 0.1s;
+    transition-delay: 0.3s;
     border-radius: .5em;
     opacity: 1;
-    transform: scale(1);
+    transform: scaleY(1);
 }
 
 .service .service-content .card:hover {
@@ -725,22 +736,19 @@ section {
 }
 
 .contact .right form .button button {
-    width: 100%;
-    height: 100%;
     color: white;
-    background: rgba(135, 45, 18, 0.714);
-    border: .1rem solid rgba(135, 45, 18, 0.714);
-    font-size: 1rem;
-    outline: none;
+    background: rgba(135, 18, 110, 0.714);
+    font-size: 1em;
     font-weight: 600;
-    border-radius: .5rem;
+    border-radius: .5em;
     cursor: pointer;
+    padding: 0.3em;
+    border: .0001em solid#5f0374;
 }
 
 .contact .right form .button button:hover {
     color: wheat;
-    background: turquoise;
-    border: .1rem solid turquoise;
+    background: #5f0374;
 }
 
 
