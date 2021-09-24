@@ -26,9 +26,9 @@ $(document).ready(function() {
             $('.about .about-content .left img, .about .about-content .right').removeClass('sticky');
         }
         if (this.scrollY > 800) {
-            $('.service .service-content .card').addClass("sticky");
+            $('.service .title, .service .service-content .card').addClass("sticky");
         } else {
-            $('.service .service-content .card').removeClass('sticky');
+            $('.service .title, .service .service-content .card').removeClass('sticky');
         }
 
     });
