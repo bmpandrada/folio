@@ -376,6 +376,7 @@ section {
     clip-path: circle(50%);
     transform: rotate(360deg);
     transition-delay: 0.3s;
+    transition: all 0.9s ease;
     opacity: 1;
     background-image: linear-gradient(60deg, #b196c4, #8c00e9, #54177c);
 }
@@ -383,7 +384,7 @@ section {
 .about .about-content .left img {
     clip-path: circle(0%);
     height: 24rem;
-    opacity: 0.1;
+    opacity: 0;
     transition-delay: 0.3s;
     width: 24rem;
     object-fit: cover;
