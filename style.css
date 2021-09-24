@@ -373,21 +373,20 @@ section {
 }
 
 .about .about-content .left img.sticky {
-    border-radius: 3em;
-    margin-left: 0;
+    clip-path: circle(50%);
+    transform: rotate(360deg);
     transition-delay: 0.3s;
     opacity: 1;
     background-image: linear-gradient(60deg, #b196c4, #8c00e9, #54177c);
 }
 
 .about .about-content .left img {
+    clip-path: circle(0%);
     height: 24rem;
-    margin-left: -35em;
-    opacity: 0;
+    opacity: 0.1;
     transition-delay: 0.3s;
     width: 24rem;
     object-fit: cover;
-    border-radius: 10em;
     transition: all 0.5s linear;
 }
 
@@ -588,6 +587,7 @@ section {
     height: .8em;
     background: gray;
     position: relative;
+    border-radius: 1em;
 }
 
 .skills .skills-content .right .line::before {
@@ -597,6 +597,7 @@ section {
     left: 0;
     right: 0;
     background: red;
+    border-radius: 1em;
 }
 
 .skills-content .right .html::before {
