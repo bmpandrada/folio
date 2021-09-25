@@ -889,7 +889,8 @@ footer span a:hover {
     }
 }
 
-@media (max-width:375px) {
+
+/*@media (max-width:375px) {
     .home {
         background: url(vibpic/a2.jpg) no-repeat center center fixed;
     }
