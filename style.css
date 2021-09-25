@@ -884,9 +884,12 @@ footer span a:hover {
     .contact .right form .email {
         margin: 0;
     }
+    .home .home-content a {
+        font-size: .3em;
+    }
 }
 
-@media (max-width:395px) {
+@media (max-width:375px) {
     .home {
         background: url(vibpic/a2.jpg) no-repeat center center fixed;
     }
