@@ -1,13 +1,7 @@
 $(document).ready(function() {
 
 
-    var scrolledY = $(window).scrollTop();
-    $('#service').css('background-position', 'center ', '920px' + ((scrolledY)) + 'px');
-    
-    
-    
-    
-    
+
 
     //THIS IS FOR link smooth behavior
     $('a').click(function() {
@@ -20,6 +14,17 @@ $(document).ready(function() {
     //navigation switch sticky
     $(window).scroll(function() {
 
+        if ($(this).scrollTop() + $(this).height() > 20) {
+            if (!$('.service').hasClass('stopscroll'))
+                $('.service').addClass('stopscroll');
+        } else {
+            if ($('.service').hasClass('stopscroll'))
+                $('.service').removeClass('stopscroll');
+        }
+
+
+
+        //-------------------------///
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
@@ -56,7 +61,6 @@ $(document).ready(function() {
         $(this).find('.menu-btn').toggleClass('active');
 
     });
-
 
 
 });
