@@ -14,7 +14,7 @@ $(document).ready(function() {
     //navigation switch sticky
     $(window).scroll(function() {
 
-        if ($(this).scrollTop() + $(this).height() > 20) {
+        if ($(this).scrollTop() + $(this).height() > 800) {
             if (!$('.service').hasClass('stopscroll'))
                 $('.service').addClass('stopscroll');
         } else {
