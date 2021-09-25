@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
 
+    var scrolledY = $(window).scrollTop();
+    $('#service').css('background-position', 'center ', '920px' + ((scrolledY)) + 'px');
+    
+    
+    
+    
+    
 
     //THIS IS FOR link smooth behavior
     $('a').click(function() {
