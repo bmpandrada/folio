@@ -409,14 +409,10 @@ section {
 
 .about .about-content .right .more {
     display: none;
-    transition-delay: 0.3s;
-    transition: all 0.3s linear;
 }
 
 .about .about-content .right .more.active {
     display: block;
-    transition-delay: 0.3s;
-    transition: all 0.3s linear;
 }
 
 .about .about-content .right .text {
