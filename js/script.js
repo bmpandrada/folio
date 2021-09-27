@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".about .about-content .right .read a").click(function() {
-        $(this).text($(this).text() == 'Read more.' ? 'See less.' : 'Read more.');
+        $(this).text($(this).text() == 'See Less' ? 'Read more...' : 'See Less');
     });
     //THIS IS FOR link smooth behavior
     $('a').click(function() {
