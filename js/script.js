@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $(".about .about-content .right .read a").click(function() {
+        $(this).text($(this).text() == 'Read more.' ? 'See less.' : 'Read more.');
+    });
     //THIS IS FOR link smooth behavior
     $('a').click(function() {
         $('html, body').animate({
@@ -42,9 +45,11 @@ $(document).ready(function() {
     });
     $('.about .about-content .right .read').click(function() {
         $(this).toggleClass('active');
-        $(".about .about-content .right .read a").text('See less');
-        $('.about .about-content .right .more').delay(200).toggle(1000)("active");
+
+        $('.about .about-content .right .more').delay(300).slideToggle(500)("active");
+
 
     });
+
 
 });
