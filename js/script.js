@@ -21,7 +21,7 @@ $(document).ready(function() {
         } else {
             $('.about .about-content .left img, .about .about-content .right').removeClass('sticky');
         }
-        if (this.scrollY > 720) {
+        if (this.scrollY > 820) {
             $('.service .title, .service .service-content .card').addClass("sticky");
         } else {
             $('.service .title, .service .service-content .card').removeClass('sticky');
