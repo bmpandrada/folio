@@ -305,18 +305,24 @@
 .home .home-content .text-1 {
     font-size: 2.5em;
     font-weight: 800;
+    transition-delay: 0.3s;
+    transition: all 0.9s ease;
 }
 
 .home .home-content .text-2 {
     font-size: 1em;
     font-weight: 500;
     padding: .5em 0;
+    transition-delay: 0.3s;
+    transition: all 0.9s ease;
 }
 
 .home .home-content .text-3 {
     font-size: 1em;
     font-weight: 500;
     padding: .5em 0;
+    transition-delay: 0.3s;
+    transition: all 0.9s ease;
 }
 
 .home .home-content a {
@@ -904,15 +910,15 @@ footer span a:hover {
         background: url(vibpic/lightbulb-3449671_1280.jpg) no-repeat center center fixed;
     }
     .home .home-content .text-1 {
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 800;
     }
     .home .home-content .text-2 {
-        font-size: .5em;
+        font-size: .8em;
         font-weight: 500;
     }
     .home .home-content .text-3 {
-        font-size: .5em;
+        font-size: .8em;
         font-weight: 500;
     }
     .home,
