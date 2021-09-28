@@ -288,9 +288,9 @@
 
 .home {
     display: flex;
-    background: url(vibpic/Untitled-5-Recovered.png) no-repeat center;
+    background: url(vibpic/lightbulb-3449671_1280.jpg) no-repeat center;
     height: 100vh;
-    color: #a019a0;
+    color: #ffffff;
     max-height: 45rem;
     background-size: cover;
     background-attachment: fixed;
@@ -298,24 +298,23 @@
 }
 
 .home .max-width {
-    margin: auto 10em 10em 10em;
-    border: 1px solid red;
+    margin: auto 13em 10em 10em;
     justify-content: center;
 }
 
 .home .home-content .text-1 {
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .home .home-content .text-2 {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .home .home-content .text-3 {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .home .home-content a {
@@ -903,7 +902,7 @@ footer span a:hover {
 
 @media (max-width:375px) {
     .home {
-        background: url(vibpic/a2.jpg) no-repeat center center fixed;
+        background: url(vibpic/lightbulb-3449671_1280.jpg) no-repeat center center fixed;
     }
     .home,
     .about,
