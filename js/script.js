@@ -1,6 +1,25 @@
 $(document).ready(function() {
+
+    var content = "Hello Folks!";
+
+    var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+
+    $(ele).hide().appendTo('.home .home-content .text-1').each(function(i) {
+        $(this).delay(110 * i).css({
+            display: 'inline',
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 100);
+    });
+
+
+
+
+
     $(".about .about-content .right .read a").click(function() {
-        $(this).text($(this).text() == 'See less' ? 'Read more...' : 'See less');
+        $(this).text($(this).text() == 'See Less' ? 'Read more...' : 'See Less');
     });
     //THIS IS FOR link smooth behavior
     $('a').click(function() {
