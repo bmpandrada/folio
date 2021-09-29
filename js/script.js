@@ -6,12 +6,12 @@ $(document).ready(function() {
 
 
     $(ele).hide().appendTo('.home .home-content .text-1').each(function(i) {
-        $(this).delay(130 * i).css({
+        $(this).delay(160 * i).css({
             display: 'inline',
             opacity: 0
         }).animate({
             opacity: 1
-        }, 300);
+        }, 500);
     });
 
 
