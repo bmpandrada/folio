@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    var content = "Hi! I'm Bruce Andrada, Frontend Web Developer.";
+    var content = "Hello 
+I am Frontend Web Developer.";
 
     var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
