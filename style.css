@@ -903,6 +903,11 @@ footer span a:hover {
     .home .home-content a {
         font-size: .7em;
     }
+
+    .home {
+        background: url(vibpic/lightbulb-3449671_1280.jpg) no-repeat center center fixed;
+    }
+
     home,
     .about,
     .service,
