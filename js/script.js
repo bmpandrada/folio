@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var content = "Hello, I am <strong> WEB DEV.</strong>";
+    var content = "Hello, I am WEBDEV.";
 
     var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
