@@ -903,6 +903,15 @@ footer span a:hover {
     .home .home-content a {
         font-size: .7em;
     }
+    home,
+    .about,
+    .service,
+    .skills,
+    .contact {
+        -webkit-background-size: cover;
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 
 @media (max-width:375px) {
