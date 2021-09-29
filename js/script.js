@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-    var content = "Hello Folks!";
+    var content = "Hello, I am <strong> WEB DEV.</strong>";
 
     var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
 
     $(ele).hide().appendTo('.home .home-content .text-1').each(function(i) {
-        $(this).delay(110 * i).css({
+        $(this).delay(130 * i).css({
             display: 'inline',
             opacity: 0
         }).animate({
             opacity: 1
-        }, 100);
+        }, 300);
     });
 
 
