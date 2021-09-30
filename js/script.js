@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var content = "Hello, I am Frontend WebDeveloper.";
+    var content = "Hello, I am 🖳 Frontend WebDeveloper.";
 
     var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
