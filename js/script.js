@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
     $(ele).hide().appendTo('.home .home-content .text-1').each(function(i) {
-        $(this).delay(300 * i).css({
+        $(this).delay(200 * i).css({
             display: 'inline',
             opacity: 0
         }).animate({
