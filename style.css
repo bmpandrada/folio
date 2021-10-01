@@ -398,7 +398,7 @@ section {
     transition-delay: 0.5s;
     transition: all 1.5s linear;
     position: relative;
-    left: 0;
+    right: 0;
 }
 
 .about .about-content .right {
@@ -406,7 +406,7 @@ section {
     opacity: 0;
     letter-spacing: .1em;
     position: relative;
-    left: -40em;
+    right: -40em;
 }
 
 .about .about-content .right .read a {
@@ -450,7 +450,7 @@ section {
 }
 
 .service .title {
-    opacity: 0;
+    left: -50em;
 }
 
 .service .title.sticky {
@@ -460,8 +460,10 @@ section {
     padding-bottom: 1.5em;
     color: white;
     opacity: 1;
-    transition: all 0.4s ease;
-    transition-delay: 0.4s;
+    transition-delay: 0.5s;
+    transition: all 1.5s linear;
+    position: relative;
+    left: 0;
 }
 
 .service .service-content {
@@ -474,24 +476,19 @@ section {
 .service .service-content .card {
     width: calc(33% - 20px);
     background: #ffffff00;
-    text-align: center;
-    padding: 20px 25px;
-    opacity: 0;
-    transform: scaleY(0);
-    position: relative;
-    left: -40em;
+    right: -40em;
 }
 
 .service .service-content .card.sticky {
     background: #ffffffc2;
+    text-align: center;
     margin: 1em 0 auto;
-    transition: all 0.8s ease;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
+    transition: all 1.5s linear;
+    padding: 20px 25px;
     border-radius: .5em;
-    opacity: 1;
-    transform: scaleY(1);
     position: relative;
-    left: 0;
+    right: 0;
 }
 
 .service .service-content .card:hover {
