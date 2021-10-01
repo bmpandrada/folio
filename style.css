@@ -395,16 +395,18 @@ section {
 
 .about .about-content .right.sticky {
     opacity: 1;
-    transition-delay: 0.3s;
-    transition: all 2s linear;
+    transition-delay: 0.5s;
+    transition: all 1.5s linear;
+    position: relative;
+    left: 0;
 }
 
 .about .about-content .right {
     width: 55%;
     opacity: 0;
-    transition-delay: 0.3s;
-    transition: all 1s linear;
     letter-spacing: .1em;
+    position: relative;
+    left: -40em;
 }
 
 .about .about-content .right .read a {
@@ -476,16 +478,20 @@ section {
     padding: 20px 25px;
     opacity: 0;
     transform: scaleY(0);
+    position: relative;
+    left: -40em;
 }
 
 .service .service-content .card.sticky {
     background: #ffffffc2;
     margin: 1em 0 auto;
-    transition: all 0.9s ease;
-    transition-delay: 0.3s;
+    transition: all 0.8s ease;
+    transition-delay: 1s;
     border-radius: .5em;
     opacity: 1;
     transform: scaleY(1);
+    position: relative;
+    left: 0;
 }
 
 .service .service-content .card:hover {
@@ -903,11 +909,9 @@ footer span a:hover {
     .home .home-content a {
         font-size: .7em;
     }
-
     .home {
         background: url(vibpic/lightbulb-3449671_1280.jpg) no-repeat center center fixed;
     }
-
     .home,
     .about,
     .service,
