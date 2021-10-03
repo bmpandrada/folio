@@ -474,21 +474,17 @@ section {
 }
 
 .service .service-content .card {
+    padding: 20px 25px;
     width: calc(33% - 20px);
-    background: #ffffff00;
-    right: -40em;
+    border-radius: .5rem;
+    text-align: center;
+    background: #dfb4b4af;
 }
 
 .service .service-content .card.sticky {
-    background: #ffffffc2;
-    text-align: center;
-    margin: 1em 0 auto;
-    transition-delay: 0.5s;
-    transition: all 1.5s linear;
-    padding: 20px 25px;
-    border-radius: .5em;
-    position: relative;
-    right: 0;
+    transition-delay: 0.3s;
+    transition: all 0.4s linear;
+    background: #f8f8f6cc;
 }
 
 .service .service-content .card:hover {
