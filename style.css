@@ -450,7 +450,7 @@ section {
 }
 
 .service .title {
-    left: -50em;
+    font-size: .4rem;
 }
 
 .service .title.sticky {
@@ -460,10 +460,8 @@ section {
     padding-bottom: 1.5em;
     color: white;
     opacity: 1;
-    transition-delay: 0.5s;
-    transition: all 1.5s linear;
-    position: relative;
-    left: 0;
+    transition-delay: 0.3s;
+    transition: all 0.4s linear;
 }
 
 .service .service-content {
@@ -477,6 +475,7 @@ section {
     padding: 20px 25px;
     width: calc(33% - 20px);
     border-radius: .5rem;
+    margin: 1em 0;
     text-align: center;
     background: #dfb4b4af;
 }
@@ -492,16 +491,9 @@ section {
     transform: scale(1.019);
 }
 
-.service .service-content .card .box {
-    transition: all 0.3s ease;
-    transition-delay: 0.3s;
-}
-
 .service .service-content .card img {
     height: 60px;
     width: 60px;
-    transition: all 0.9s ease;
-    transition-delay: 0.4s;
 }
 
 .service .service-content .text {
