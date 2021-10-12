@@ -394,6 +394,8 @@ section {
 }
 
 .about .about-content .right.sticky {
+    display: block;
+    letter-spacing: .1em;
     opacity: 1;
     transition-delay: 0.5s;
     transition: all 1.5s linear;
@@ -402,9 +404,9 @@ section {
 }
 
 .about .about-content .right {
+    display: hide;
     width: 55%;
-    opacity: 0;
-    letter-spacing: .1em;
+    opacity: -10;
     position: relative;
     right: -40em;
 }
