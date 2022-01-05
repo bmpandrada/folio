@@ -1,4 +1,18 @@
 $(document).ready(function() {
+
+    //THIS IS FOR INTRO CONTENT
+    const content = "Hello, I am 🖳 Frontend WebDeveloper.";
+    const ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+    $(ele).hide().appendTo('.home .home-content .text-1').each(function(i) {
+        $(this).delay(100 * i).css({
+            display: 'inline',
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 100);
+    });
+
     //THIS IS FOR MENU TOGGLE
     //MENU TAB WILL APPEAR AFTER MINIMIZING
     $('.menu-btn').click(function() {
@@ -7,6 +21,7 @@ $(document).ready(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn img').toggleClass("active");
     });
+
 
     //THIS IS FOR AFTER CLICK MENU//
     $('.navbar .menu').on('click', event => {
@@ -23,17 +38,6 @@ $(document).ready(function() {
         $('.about .about-content .right .more').delay(200).slideToggle(500)("active");
     });
 
-    //THIS IS FOR INTRO CONTENT
-    const content = "Hello, I am 🖳 Frontend WebDeveloper.";
-    const ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-    $(ele).hide().appendTo('.home .home-content .text-1').each(function(i) {
-        $(this).delay(100 * i).css({
-            display: 'inline',
-            opacity: 0
-        }).animate({
-            opacity: 1
-        }, 100);
-    });
 
     //THIS IS FOR link smooth behavior
     $('a').click(function() {
@@ -44,6 +48,7 @@ $(document).ready(function() {
 
     //navigation switch sticky
     $(window).scroll(function() {
+
         //-------------------------///
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
@@ -51,6 +56,7 @@ $(document).ready(function() {
             $('.navbar').removeClass('sticky');
         }
         if (this.scrollY > 400) {
+
             $('.about .about-content .left img,  .about .about-content .right').addClass("sticky");
         } else {
             $('.about .about-content .left img, .about .about-content .right').removeClass('sticky');
