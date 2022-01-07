@@ -387,10 +387,8 @@ section {
     clip-path: circle(0%);
     height: 24rem;
     opacity: 0;
-    transition-delay: 0.3s;
     width: 24rem;
     object-fit: cover;
-    transition: all 0.5s linear;
 }
 
 .about .about-content .right.sticky {
@@ -398,17 +396,15 @@ section {
     letter-spacing: .1em;
     opacity: 1;
     transition-delay: 0.5s;
-    transition: all 1.5s linear;
+    transition: all 1s linear;
     position: relative;
     right: 0;
 }
 
 .about .about-content .right {
-    display: hide;
     width: 55%;
     opacity: -10;
     position: relative;
-    right: -40em;
 }
 
 .about .about-content .right .read a {
