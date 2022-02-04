@@ -424,6 +424,7 @@ section {
 .service .title {
     font-size: 1em;
     visibility: hidden;
+    color: #ffffff;
 }
 
 .service .title.sticky {
