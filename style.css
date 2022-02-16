@@ -604,6 +604,52 @@ section {
 }
 
 
+/*for work */
+
+.work {
+    font-family: montserrat, sans-serif;
+    font-size: 1rem;
+    background: #541212;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f7f7f7;
+    text-align: center;
+    width: auto;
+}
+
+.work .title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.work .workContent {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    margin: 1em 0;
+    padding: .5em;
+}
+
+.work .workContent {
+    font-size: 2rem;
+}
+
+.work .workContent .frame {
+    margin: 1em 0;
+    transition: all 0.2s linear;
+}
+
+.work .workContent .frame:hover {
+    transform: scale(1.1);
+}
+
+.work .workContent .frame .images {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+
 /*contact  styling*/
 
 .contact {
@@ -839,6 +885,9 @@ footer span a:hover {
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 1.8;
+    }
+    .work .workContent {
+        flex-direction: column;
     }
 }
 
