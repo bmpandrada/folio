@@ -435,8 +435,7 @@ section {
     padding-bottom: 1.5em;
     color: white;
     opacity: 1;
-    transition-delay: 0.3s;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
 }
 
 .service .service-content {
@@ -452,7 +451,6 @@ section {
     border-radius: .5rem;
     margin: 1em 0;
     text-align: center;
-    background: #dfb4b4af;
 }
 
 .service .service-content .card.sticky {
@@ -608,8 +606,7 @@ section {
 
 .work {
     font-family: montserrat, sans-serif;
-    font-size: 1rem;
-    background: #541212;
+    background: linear-gradient(to bottom, rgba(2, 42, 85, 0.459), rgba(2, 5, 43, 0.486)), url(vibpic/idea.jpg) no-repeat bottom;
     background-size: cover;
     background-attachment: fixed;
     color: #f7f7f7;
@@ -620,6 +617,10 @@ section {
 .work .title {
     text-align: center;
     font-size: 2rem;
+}
+
+.work p {
+    font-size: 1.5rem;
 }
 
 .work .workContent {
@@ -637,6 +638,7 @@ section {
 
 .work .workContent .frame {
     margin: 1em 0;
+    width: 100%;
     transition: all 0.2s linear;
 }
 
@@ -644,9 +646,13 @@ section {
     transform: scale(1.1);
 }
 
+.work .workContent .frame .images:hover {
+    box-shadow: 5px 5px 5px #6405a8;
+}
+
 .work .workContent .frame .images {
-    width: 90%;
-    border-radius: 1rem;
+    width: 75%;
+    border-radius: .5rem;
 }
 
 
@@ -886,8 +892,16 @@ footer span a:hover {
         width: 100%;
         margin-bottom: 1.8;
     }
+    .work .workContent .frame {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
     .work .workContent {
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .work p {
+        font-size: .5em;
     }
 }
 
@@ -901,6 +915,12 @@ footer span a:hover {
     .about .about-content .left img {
         width: 250px;
         height: 250px;
+    }
+    .work .workContent {
+        flex-direction: column;
+    }
+    .work p {
+        font-size: 1em;
     }
 }
 
@@ -919,6 +939,7 @@ footer span a:hover {
     .about,
     .service,
     .skills,
+    .work,
     .contact {
         -webkit-background-size: cover;
         background-attachment: scroll;
@@ -927,7 +948,7 @@ footer span a:hover {
 }
 
 @media (max-width:375px) {
-    me .home-content .text-1 {
+    .home-content .text-1 {
         font-size: 1em;
         font-weight: 800;
     }
@@ -935,6 +956,7 @@ footer span a:hover {
     .about,
     .service,
     .skills,
+    .work,
     .contact {
         -webkit-background-size: cover;
         background-attachment: scroll;
