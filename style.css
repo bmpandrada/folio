@@ -451,12 +451,14 @@ section {
     border-radius: .5rem;
     margin: 1em 0;
     text-align: center;
+    visibility: hidden;
 }
 
 .service .service-content .card.sticky {
-    transition-delay: 0.3s;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
+    transition-delay: 0.4s;
     background: #f8f8f6cc;
+    visibility: visible;
 }
 
 .service .service-content .card:hover {
@@ -625,21 +627,19 @@ section {
 
 .work .workContent {
     display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-    justify-content: center;
-    margin: 1em 0;
-    padding: .5em;
-}
-
-.work .workContent {
-    font-size: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .work .workContent .frame {
+    padding: 20px 25px;
+    width: calc(35% - 20px);
+    border-radius: .5rem;
     margin: 1em 0;
-    width: 100%;
-    transition: all 0.2s linear;
+    text-align: center;
+    transition: all 0.3s linear;
+    transition-delay: 0.1s;
 }
 
 .work .workContent .frame:hover {
@@ -651,7 +651,7 @@ section {
 }
 
 .work .workContent .frame .images {
-    width: 75%;
+    width: 100%;
     border-radius: .5rem;
 }
 
@@ -893,15 +893,11 @@ footer span a:hover {
         margin-bottom: 1.8;
     }
     .work .workContent .frame {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 1em;
-    }
-    .work .workContent {
-        flex-direction: row;
+        width: 50%;
+        margin: 0 auto 1em;
     }
     .work p {
-        font-size: .5em;
+        font-size: 1.5em;
     }
 }
 
@@ -916,11 +912,11 @@ footer span a:hover {
         width: 250px;
         height: 250px;
     }
-    .work .workContent {
-        flex-direction: column;
+    .work .workContent .frame {
+        width: 100%;
     }
     .work p {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 }
 
