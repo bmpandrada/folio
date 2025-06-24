@@ -36,7 +36,7 @@
                 <i></i>
                 <i></i>
                 <i></i>
-              </span>
+            </span>
 
     </nav>
 
@@ -68,9 +68,11 @@
 
                 <div class="column right">
                     <h2 class="text">Hi, I'm Bruce<strong> Frontend Developer.</strong></h2>
-                    <p>Passionate and motivated Junior Developer, delivering high quality <strong>HTML, CSS</strong> and <strong>JAVASCRIPT</strong> projects.</p>
+                    <p>Passionate and motivated Junior Developer, delivering high quality <strong>HTML, CSS</strong> and
+                        <strong>JAVASCRIPT</strong> projects.</p>
 
-                    <div class="more" id="#more">Interested to establish in a long-term career in the field of web development – particularly in web design (CSS, HTML, and Javascript). </div>
+                    <div class="more" id="#more">Interested to establish in a long-term career in the field of web
+                        development – particularly in web design (CSS, HTML, and Javascript). </div>
                     <div class="read"> <a class="readmore" href="#more">Read More.</a></div>
 
                 </div>
@@ -87,21 +89,24 @@
                     <div class="box">
                         <img src="vibpic/html5-brands.svg">
                         <div class="text">HTML5</div>
-                        <p>We also provide Advertising Aasistance just in case you need one as well as Web App Designs. </p>
+                        <p>We also provide Advertising Aasistance just in case you need one as well as Web App Designs.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="vibpic/css3-brands.svg">
                         <div class="text">CCS3</div>
-                        <p>We also provide Advertising Aasistance just in case you need one as well as Web App Designs. </p>
+                        <p>We also provide Advertising Aasistance just in case you need one as well as Web App Designs.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="vibpic/js-square-brands.svg">
                         <div class="text">JavaScript</div>
-                        <p>We also provide Advertising Aasistance just in case you need one as well as Web App Designs. </p>
+                        <p>We also provide Advertising Aasistance just in case you need one as well as Web App Designs.
+                        </p>
                     </div>
                 </div>
 
@@ -116,7 +121,9 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">Experience</div>
-                    <p> I am a self-taught front-end developer specializing in the technologies HTML, CSS, JavaScript. I help individual person to plan and build their need to visualize the websites and landing pages that possess quality and comprehensible
+                    <p> I am a self-taught front-end developer specializing in the technologies HTML, CSS, JavaScript. I
+                        help individual person to plan and build their need to visualize the websites and landing pages
+                        that possess quality and comprehensible
                         User Interface (UI), and User Experience (UX).</p>
 
                 </div>
@@ -130,15 +137,22 @@
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <span>CSS3</span>
-                            <span>80%</span>
+                            <span>CSS5</span>
+                            <span>95%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bar">
                         <div class="info">
+                            <span>SASS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="line sass"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
                             <span>JAVASCRIPT</span>
-                            <span>65%</span>
+                            <span>85%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
@@ -166,7 +180,8 @@
             <h2 class="title">Project</h2>
             <div class="workContent">
                 <div class="frame">
-                    <a href="https://bmpandrada.github.io/calcu/"><img class="images" src="picofwork/cal.jpg" alt=""> </a>
+                    <a href="https://bmpandrada.github.io/calcu/"><img class="images" src="picofwork/cal.jpg" alt="">
+                    </a>
                     <p>Application</p>
 
                 </div>
@@ -175,11 +190,13 @@
                     <p>Web design</p>
                 </div>
                 <div class="frame">
-                    <a href="https://bmpandrada.github.io/diceRole/"><img class="images" src="picofwork/dice.jpg" alt=""></a>
+                    <a href="https://bmpandrada.github.io/diceRole/"><img class="images" src="picofwork/dice.jpg"
+                            alt=""></a>
                     <p>Game</p>
                 </div>
                 <div class="frame">
-                    <a href="https://bmpandrada.github.io/lovepercent/"><img class="images" src="picofwork/love.jpg" alt=""></a>
+                    <a href="https://bmpandrada.github.io/lovepercent/"><img class="images" src="picofwork/love.jpg"
+                            alt=""></a>
                     <p>Social</p>
                 </div>
 
@@ -226,32 +243,52 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message Me</div>
-                    <form action="mailto:bmpandrada@gmail.com" method="post" enctype="text/plain">
+                    <form id="contactForm">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input name="name" type="text" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input name="subject" type="text" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Send Message</button>
                         </div>
                     </form>
+                    <script>
+                        document.getElementById("contactForm").addEventListener("submit", async function (e) {
+                            e.preventDefault();
+
+                            const formData = new FormData(this);
+                            const data = Object.fromEntries(formData.entries());
+
+                            const response = await fetch("http://localhost:5000/send-email", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(data)
+                            });
+
+                            const result = await response.text();
+                            alert(result);
+                        });
+                    </script>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Coded by <span><a href="https://www.facebook.com/bmpandrada" target="_blank"> BMPA</a></span> | &copy; 2021 All Right Reserved</p>
+        <p>Coded by <span><a href="https://www.facebook.com/bmpandrada" target="_blank"> BMPA</a></span> | &copy; 2021
+            All Right Reserved</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

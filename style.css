@@ -588,11 +588,16 @@ section {
 }
 
 .skills-content .right .css::before {
-    width: 80%;
+    width: 95%;
 }
 
+.skills-content .right .sass::before {
+    width: 95%;
+}
+
+
 .skills-content .right .js::before {
-    width: 65%;
+    width: 85%;
 }
 
 .skills-content .right .php::before {
