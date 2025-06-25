@@ -1,33 +1,33 @@
-// api/send-email.js
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
-    return res.status(405).send('Only POST requests allowed');
+    return res.status(405).json({ message: 'Only POST allowed' });
   }
 
   const { name, email, subject, message } = req.body;
 
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'your@gmail.com',
-      pass: 'your-app-password', // ⚠️ Use App Password, not your real one
-    },
-  });
-
-  const mailOptions = {
-    from: email,
-    to: 'your@gmail.com',
-    subject: `Contact Form: ${subject}`,
-    text: `From: ${name} <${email}>\n\n${message}`,
-  };
-
   try {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_USER,
+      subject: `Portfolio Message: ${subject}`,
+      text: `From: ${name} <${email}>\n\n${message}`,
+    };
+
     await transporter.sendMail(mailOptions);
-    res.status(200).send('Email sent!');
+
+    return res.status(200).json({ success: true, message: 'Email sent successfully' });
   } catch (err) {
     console.error(err);
-    res.status(500).send('Email failed.');
+    return res.status(500).json({ success: false, message: 'Failed to send email.' });
   }
 }
