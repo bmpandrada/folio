@@ -63,7 +63,7 @@
             <h1 class="title">About Me</h1>
             <div class="about-content">
                 <div class="column left">
-                    <img src="vibpic/ako.jpg" alt="graduation day bruce">
+                    <img src="./vibpic/ako.jpg" alt="graduation day bruce">
                 </div>
 
                 <div class="column right">
@@ -269,7 +269,7 @@
                             const formData = new FormData(this);
                             const data = Object.fromEntries(formData.entries());
 
-                            const response = await fetch("http://localhost:5000/send-email", {
+                            const response = await fetch("https://folio-flame.vercel.app/send-email'", {
                                 method: "POST",
                                 headers: {
                                     "Content-Type": "application/json"
@@ -291,6 +291,7 @@
             All Right Reserved</p>
     </footer>
     <script src="js/script.js"></script>
+    <script src="server.js"></script>
 </body>
 
 </html>

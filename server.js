@@ -1,45 +1,42 @@
-// server.js
 import express from 'express';
-import bodyParser from 'body-parser';
-import nodemailer from 'nodemailer';
 import cors from 'cors';
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json()); // Use Express's built-in JSON parser
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'bmpandrada@gmail.com',
-    pass: 'jabuimlvmnboheid'
+app.post('/send-email', async (req, res) => {
+  const { name, email, subject, message } = req.body;
+
+  try {
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+      }
+    });
+
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_USER,
+      subject: `Portfolio Message: ${subject}`,
+      text: `From: ${name} <${email}>\n\n${message}`
+    };
+
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ success: true, message: 'Email sent successfully.' });
+  } catch (err) {
+    console.error('Email error:', err);
+    res.status(500).json({ success: false, message: 'Failed to send email.' });
   }
 });
 
-app.post('/send-email', (req, res) => {
-  const { name, email, subject, message } = req.body;
-
-  const mailOptions = {
-    from: email,
-    to: 'bmpandrada@gmail.com',
-    subject: `Contact Form: ${subject}`,
-    text: `From: ${name} <${email}>\n\n${message}`
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-    //   console.log('❌ Email failed:', error);
-      res.status(500).send('Email failed.');
-    } else {
-    //   console.log('✅ Email sent:', info.response);
-      res.send('Email sent!');
-    }
-  });
-});
-
 app.listen(PORT, () => {
-//   console.log(`✅ Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });
